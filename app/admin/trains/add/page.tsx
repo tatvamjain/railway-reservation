@@ -62,8 +62,16 @@ export default async function AddTrainPage() {
                 <Input id="total_seats" name="total_seats" type="number" min="1" required />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="price">Price per Seat</Label>
-                <Input id="price" name="price" type="number" min="0" step="0.01" required />
+                <Label htmlFor="price">Price per Seat (₹)</Label>
+                <Input
+                  id="price"
+                  name="price"
+                  type="number"
+                  min="0"
+                  step="0.01"
+                  required
+                  placeholder="Enter amount in rupees"
+                />
               </div>
             </div>
           </CardContent>

@@ -110,8 +110,17 @@ export default async function EditTrainPage({
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="price">Price per Seat</Label>
-                <Input id="price" name="price" type="number" min="0" step="0.01" defaultValue={train.price} required />
+                <Label htmlFor="price">Price per Seat (₹)</Label>
+                <Input
+                  id="price"
+                  name="price"
+                  type="number"
+                  min="0"
+                  step="0.01"
+                  defaultValue={train.price}
+                  required
+                  placeholder="Enter amount in rupees"
+                />
               </div>
             </div>
           </CardContent>

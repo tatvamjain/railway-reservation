@@ -47,9 +47,9 @@ export function BookingPreview({ train, seats, journeyDate }: BookingPreviewProp
             <p className="text-sm">Seats: {seats}</p>
           </div>
           <div>
-            <h3 className="font-medium">Price Details</h3>
-            <p className="text-sm">Price per seat: {formatCurrency(train.price)}</p>
-            <p className="text-sm font-bold">Total: {formatCurrency(totalPrice)}</p>
+            <h3 className="font-medium">Fare Details</h3>
+            <p className="text-sm">Fare per seat: {formatCurrency(train.price)}</p>
+            <p className="text-sm font-bold">Total Amount: {formatCurrency(totalPrice)}</p>
           </div>
         </div>
       </CardContent>

@@ -96,11 +96,11 @@ export default async function BookingDetailsPage({
               </div>
               <div>
                 <p className="text-sm font-medium">Price per Seat</p>
-                <p className="text-muted-foreground">{formatCurrency(booking.price)}</p>
+                <p className="text-muted-foreground">{formatCurrency(booking.price || 0)}</p>
               </div>
               <div>
-                <p className="text-sm font-medium">Total Price</p>
-                <p className="text-muted-foreground">{formatCurrency(booking.total_price)}</p>
+                <p className="text-sm font-medium">Total Amount</p>
+                <p className="text-muted-foreground font-bold">{formatCurrency(booking.total_price)}</p>
               </div>
             </div>
           </div>
